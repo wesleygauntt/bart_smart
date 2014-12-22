@@ -1,0 +1,12 @@
+<% station_names = list_stations[0] %>
+<% station_abbreviations = list_stations[1] %>
+<% count = 0 %>
+
+<h3>Station Names/Abbreviations </h3>
+
+<% station_names.each do |name| %>
+  <li><strong>Name: </strong> <%= name %></li>
+  <li><strong>Abbreviation: </strong><%= station_abbreviations[count] %></li>
+  <br>
+  <% count +=1 %>
+<% end %>
